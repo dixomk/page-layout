@@ -16,6 +16,7 @@
     "node-sass": "^3.10.1",
     "node-static": "^0.7.9",
     "postcss": "^5.2.5",
+    "postcss-loader": "^1.0.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2"

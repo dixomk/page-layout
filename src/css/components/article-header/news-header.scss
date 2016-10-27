@@ -1,0 +1,7 @@
+@import "./mixins/mixins";
+
+.news-header-container{
+    margin:10px 0 0 0;
+    // padding: 10px 0 10px 0;
+   @include withLineHeader(#000, #f00, "PT Sans", 18px);
+}

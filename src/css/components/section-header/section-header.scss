@@ -1,0 +1,30 @@
+@mixin sectionHeader($color, $fontSize, $linecolor){
+
+}
+.section-header{
+    font-family: PT Sans;
+    font-weight: 700;
+    color: #6a0099;
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    height:30px;
+    margin-top: 31px;
+    position:relative;
+    text-align: center;
+    &::after{
+        content: "\0020";
+        display: block;
+        height: 2px;
+        background: black;
+        position: absolute;
+        top: 0.68em;
+        width:100%;
+    }
+    & span{
+        background: #fff;
+        z-index:2;
+        padding: 0 5px;
+        position:relative;
+    }
+}

@@ -1,4 +1,4 @@
-var autoprifixer = require("autoprefixer");
+var autoprefixer = require("autoprefixer");
 
 module.exports = {
     entry: "./src/index.js",
@@ -10,8 +10,13 @@ module.exports = {
         loaders: [
             {
                 test: /\.scss$/,
-                loaders:["style","css","sass"]
+                loaders:["style", "css", "postcss", "sass"]
             }
-        ]
+        ],
+        postcss: function() {
+            return [
+                autoprefixer({ browsers: ['last 2 versions'] })
+            ];
+        }
     }
  };

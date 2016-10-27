@@ -1,1 +1,13 @@
-@import "./components/article-header/article-header.scss";
+// news header
+@import "./components/article-header/news-header";
+// slider
+@import "./components/slider/slider-tab";
+@import "./components/slider/slider";
+@import "./components/slider/slider-container";
+@import "./components/slider/slide-description";
+@import "./components/slider/slide-title";
+@import "./components/slider/slider-navigation";
+@import "./components/slider/slide-link";
+@import "./components/slider/slide-short";
+// section-header
+@import "./components/section-header/section-header";

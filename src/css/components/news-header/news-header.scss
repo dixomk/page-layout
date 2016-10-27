@@ -1,0 +1,5 @@
+@import "./mixins/mixins";
+
+.article-header-container{
+   @include articleHeader(#000, #f00, "PT Sans", 18px);
+}

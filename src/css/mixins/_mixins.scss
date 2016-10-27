@@ -1,0 +1,18 @@
+// different headers
+@mixin underlineHeader($color, $lineColor, $font, $fontSize){
+    position:relative;
+    border-bottom: 2px solid $lineColor;
+    font-family: $font;
+    font-size: $fontSize;
+    color: $color;
+}
+
+@mixin withLineHeader($color, $lineColor, $font, $fontSize){
+    @include underlineHeader($color, $lineColor, $font, $fontSize);
+    & span{
+        position:relative;
+        top:0.38em;
+        background:white;
+        padding-right:5px;
+    }
+}
