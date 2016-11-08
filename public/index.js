@@ -44,51 +44,25 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
+	__webpack_require__(5);
 
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(2);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(2)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".news-header-container {\n  margin: 10px 0 0 0;\n  position: relative;\n  border-bottom: 2px solid #f00;\n  font-family: \"PT Sans\";\n  font-size: 18px;\n  color: #000; }\n  .news-header-container span {\n    position: relative;\n    top: 0.38em;\n    background: white;\n    padding-right: 5px; }\n\n.slider-tab {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  background: RGBA(100, 100, 100, 0.3); }\n  .slider-tab li {\n    display: inline-block;\n    padding-left: 10px;\n    padding-right: 10px;\n    line-height: 30px;\n    vertical-align: middle;\n    height: 30px; }\n    .slider-tab li.active {\n      color: white;\n      background: RGB(51, 51, 51); }\n\n.slider {\n  height: 277px;\n  overflow: hidden;\n  border-bottom: 6px red solid;\n  padding-top: 21px;\n  position: relative; }\n\n.slider-container {\n  margin-top: 31px; }\n\n.slide-description {\n  display: inline-block;\n  width: 239px;\n  padding: 0 12px 0 20px; }\n\n.slide-title {\n  font-size: 28px;\n  margin-top: 12px;\n  margin-bottom: 7px;\n  font-weight: normal;\n  font-family: PT Serif, sans-serif;\n  color: red; }\n\n.slider-navigation {\n  position: absolute;\n  top: 200px;\n  left: 500px; }\n\n.slide-link {\n  display: inline-block;\n  float: left; }\n\n.slide-short {\n  margin-top: 0; }\n\n.section-header {\n  font-family: PT Sans;\n  font-weight: 700;\n  color: #6a0099;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  height: 30px;\n  margin-top: 31px;\n  position: relative;\n  text-align: center; }\n  .section-header::after {\n    content: \" \";\n    display: block;\n    height: 2px;\n    background: black;\n    position: absolute;\n    top: 0.68em;\n    width: 100%; }\n  .section-header span {\n    background: #fff;\n    z-index: 2;\n    padding: 0 5px;\n    position: relative; }\n", ""]);
+	exports.push([module.id, ".news-header-container {\n  margin: 10px 0 0 0;\n  position: relative;\n  border-bottom: 2px solid #000;\n  font-family: \"PT Sans\";\n  font-size: 18px;\n  color: #000; }\n  .news-header-container span {\n    position: relative;\n    top: 0.38em;\n    background: white;\n    padding-right: 5px; }\n\n.slider-tab {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  background: RGBA(100, 100, 100, 0.3); }\n  .slider-tab li {\n    display: inline-block;\n    padding-left: 10px;\n    padding-right: 10px;\n    line-height: 30px;\n    vertical-align: middle;\n    height: 30px; }\n    .slider-tab li.active {\n      color: white;\n      background: RGB(51, 51, 51); }\n\n.slider {\n  height: 277px;\n  overflow: hidden;\n  border-bottom: 6px red solid;\n  padding-top: 21px;\n  position: relative; }\n\n.slider-container {\n  margin-top: 31px; }\n\n.slide-description {\n  display: inline-block;\n  width: 239px;\n  padding: 0 12px 0 20px; }\n\n.slide-title {\n  font-size: 28px;\n  margin-top: 12px;\n  margin-bottom: 7px;\n  font-weight: normal;\n  font-family: PT Serif, sans-serif;\n  color: red; }\n\n.slider-navigation {\n  position: absolute;\n  top: 200px;\n  left: 500px; }\n\n.slide-link {\n  display: inline-block;\n  float: left; }\n\n.slide-short {\n  margin-top: 0; }\n\n.section-header {\n  font-family: PT Sans;\n  font-weight: 700;\n  color: #6a0099;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  height: 30px;\n  margin: 31px 0 5px 0;\n  position: relative;\n  text-align: center; }\n  .section-header::after {\n    content: \" \";\n    display: block;\n    height: 2px;\n    background: black;\n    position: absolute;\n    top: 0.68em;\n    width: 100%; }\n  .section-header span {\n    background: #fff;\n    z-index: 2;\n    padding: 0 5px;\n    position: relative; }\n\n.video-box {\n  position: relative;\n  margin-bottom: 10px;\n  overflow: hidden; }\n  .video-box__icon {\n    float: left;\n    margin-right: 10px;\n    width: 138px;\n    height: 88px; }\n  .video-box__btn-play {\n    position: absolute;\n    width: 20px;\n    height: 20px;\n    background-image: url(" + __webpack_require__(3) + ");\n    background-size: 20px 20px;\n    top: 65px;\n    left: 3px;\n    cursor: pointer; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports) {
 
 	/*
@@ -142,6 +116,12 @@
 		return list;
 	};
 
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./img/video_icon_pink.png";
 
 /***/ },
 /* 4 */
@@ -394,6 +374,32 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(1);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
 /***/ }
 /******/ ]);
